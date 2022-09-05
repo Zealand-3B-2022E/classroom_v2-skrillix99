@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassRoomNet60
 {
-    internal class Studerende
+    public class Studerende
     {
         private string _navn;
         private int _fødselsmåned;
@@ -29,5 +29,12 @@ namespace ClassRoomNet60
             set { _fødselsdag = value; }
         }
 
+
+        public Studerende(string navn, int fødselsmåned, int fødselsdag)
+        {
+            Navn = navn;
+            Fødselsmåned = fødselsmåned;
+            Fødselsdag = fødselsdag;
+        }
     }
 }
